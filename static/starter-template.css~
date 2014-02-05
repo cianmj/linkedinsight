@@ -1,0 +1,8 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 10px 15px;
+  text-align: center;
+  background: url('/static/ico/top-linkedin-groups_t.png') center center;
+}

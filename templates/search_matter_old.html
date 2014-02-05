@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta name="description" content="">
+                        <meta name="author" content="">
+                            <link rel="shortcut icon" href="/ico/favicon.png">
+                                
+                                <title>Starter Template for Bootstrap</title>
+                                
+                                <!-- Bootstrap core CSS -->
+                                <link href="/static/dist/css/bootstrap_search.css" rel="stylesheet">
+
+                                    <!-- Custom styles for this template -->
+                                    <link href="/static/starter-template.css" rel="stylesheet">
+                                        
+                                        <!-- Just for debugging purposes. Don't actually copy this line! -->
+                                        <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+                                        
+                                        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                        <!--[if lt IE 9]>
+                                         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                                         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+                                         <![endif]-->
+
+<!--
+<style>
+    background:url("/static/ico/top-linkedin-groups.png");
+ }
+</style>
+
+ <script src="/static/dist/js/jquery.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+ <script src="/static/dist/js/jquery-ui.min.js"></script>
+
+ $("#skill").mouseover(function(){
+ $(this).css("background-color","blue");
+ alert("lajslkdjfsd");
+ });
+
+ div class="out overout"
+ $( "#outer" ).mouseover(function() {
+ $( "#log" ).append( "<div>Handler for .mouseover() called.</div>" );
+ });
+
+ $("p").hover(function(){
+ $("p").css("background-color","yellow");
+ },function(){
+ $("p").css("background-color","pink");
+ });
+
+<script src="/static/dist/js/jquery-2.0.3.min.js"></script>
+
+ <script type="text/javascript">
+ $("#name").mouseover(function() {
+ $(this).css("background-color","blue");
+ alert("lajslkdjfsd");
+ });
+ </script>
+
+  -->
+<script src="/static/dist/js/jquery.js"></script>
+
+ <script src="/static/dist/js/button.js"></script>
+
+<script>
+$(document).ready(function(){
+console.log( "ready!" );
+var arr = [];
+{% for skill in results %}
+                  arr.push("{{skill}}")
+                  {%endfor%}
+//fillSearch('{{results}}');
+//fillSkill(arr)
+
+fillSearch(arr);
+//When the button with id find_button is clicked then do these actions
+$('#button').click(function() {
+//Collect the values in the form fields with ids of skill
+var skill = $('#skill').val();
+//Call the getRestaurant function in data.js with the input values
+fillSearch(skill);
+});
+});
+
+//$(fillSearch('defaultquery');
+//$('button_selector').click(function()
+//                           )
+
+function new_page(){
+    window.location.href="search.html?q={{keyword}}";
+}
+function reload_page(){
+    window.location.href="search_matter.html?q={{keyword}}";
+}
+
+
+    </script>
+
+
+    </head>
+    
+    <body>
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LinkedInsight</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<!--
+<div id="carousel" class="carousel slide" rel="carousel">
+    <div class="carousel-inner">
+        <div class="active item">
+            <h1 class="alt">DATA SCIENCE</h1>
+            <img src="/static/ico/top-linkedin-groups.png"/>
+        </div>
+    </div>
+</div>
+--> 
+
+<!--
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">LinkedInsight</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse
+            </div>
+        </div>
+ -->
+        <div class="container">
+            <br>
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="hero-unit">
+                <div class="bg">
+            <center>
+                <h2> Most <font color="red">valuable</font>skills associated with </h2>
+<h1>
+    {{ keyword }}
+</h1>
+
+<h3>
+<tt>
+
+
+{% for skill in results %}
+<button type="button" onclick='fillSearch("{{skill}}")'>{{skill}}</button>
+{%endfor%}
+
+</tt>
+</h3>
+
+
+<p> <a href="#" onclick="reload_page();"> ---- </a> </p>
+
+<p><a href="#" class="btn btn-primary btn-large" onclick="new_page();"> Show most common &raquo;</a></p>
+
+
+<!--
+<a href="http://www-stat.stanford.edu/~hastie/"
+    
+    target="new" onmouseover="document.the_image.src='th.gif';" onmouseout="document.the_image.src='image.gif';">
+ Trevor Hastie</a>
+-->
+</div>
+            </div>
+            
+            <!-- Example row of columns <\center>-->
+            <div class="row">
+                <div class="span4">
+                    <h2>Top Connections</h2>
+                    
+               <div class="span">
+            <p id="connections">
+            </p>
+</div>
+
+<div class="span">
+    <br>
+    <center>
+<!--        <img src="/static/pictures/39230.jpg" name="the_image" border="0" height="70" width="70"> -->
+
+    </center>
+    <br>
+</div>
+<br>
+<p id="cpic"></p>
+<!--{% for number in range(0,5) %}
+                    <a id="connection_{{number}}" href="connection_url_{{number}}"> </a>
+                     <a id="connection_{{number}}"> </a>
+ {%endfor%}
+                     -->
+                    <!-- {% for val in results[2] %}
+                    <a href={{val[1]}} id = "name">
+                    {{val[0] }} </a> <br>
+                    {%endfor%}
+
+                                         <p><a class="btn" href="#">View details &raquo;</a></p>
+                     -->
+
+                </div>
+                <div class="span4">
+                    <h2>Community Leaders</h2>
+
+<!--<tbody>
+    <tr>
+        <td width="70%"> 
+ <div class="row">
+ -->
+
+
+                <div class="span">
+
+                    <p id="leaders"> </p>
+</div>
+<!--</td>
+
+ <td width="30%"> 
+ <div class="row">
+ -->
+
+    <div class="span">
+<br>
+<center>
+<p id="lpic"></p>
+<!--            <img src="/static/pictures/39230.jpg" name="the_image" border="0" height="70" width="70"> -->
+            </center>
+<br>
+    </div>
+<br>
+<!--
+
+ </td>
+        </tr>
+    </tbody>
+-->
+
+                    <!--{% for number in range(0,5) %}
+                    <a id="leader_{{number}}" href="leader_url_{{number}}"> </a>
+                    {%endfor%} -->
+                    <!--{% for val in results[1] %}
+                    <a href={{val[1]}} id = "name"> {{val[0] }} </a> <br>
+                    {%endfor%}
+                     
+                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                     -->
+                    
+
+                </div>
+                <div class="span4">
+                    <h2>Most Popular Groups</h2>
+                    <p id="groups"> </p>
+                    <!--{% for number in range(0,5) %}
+                    <a id="group_{{number}}" href="group_url_{{number}}"> </a>
+                    {%endfor%} -->
+                    <!--{% for val in results[3] %}
+                    <a href={{val[1]}}> {{val[0] }} </a> <br>
+                    {%endfor%}
+                     
+                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                     -->
+
+                </div>
+            </div>
+            
+            <hr>
+
+        <!-- Bootstrap core JavaScript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="static/dist/js/bootstrap.min.js"></script>
+-->
+    </body>
+</html>
