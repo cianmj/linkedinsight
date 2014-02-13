@@ -447,25 +447,9 @@ def find_skills(keyword,matter):
         dw_job = dict(w_job)
     temp = sorted(dw_job.items(), key=lambda x: -x[1])
     """
-
-    scale = 150.
     job_skills = []
     for i in range(len(temp)):
-        if str(temp[i][0]).lower() == keyword:
-            job_skills.append([temp[i][0],int(scale*temp[i][1])])
-            continue
-        cycle=False
-        word_list = temp[i][0].split(' ')
-        if len(word_list) > 2:
-            continue
-        for word in word_list:
-            if word.lower() in keyword:
-                cycle = True
-        if cycle == True:
-            continue
-        else:
-            job_skills.append([temp[i][0],int(scale*temp[i][1])])
-
+        job_skills.append([temp[i][0],int(scale*temp[i][1])])
 
     outfile = open(location,'wb')
     pickle.dump(job_skills[0:number_to_return],outfile)
